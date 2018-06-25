@@ -24,7 +24,7 @@ def tally_results():
 	global wins
 	global loses
 	global draws
-	print "I won {0} times, lost {1} times, and tied {2} for a career total score of {3}".format(wins, loses, draws, wins - loses)
+	print("I won {0} times, lost {1} times, and tied {2} for a career total score of {3}".format(wins, loses, draws, wins - loses))
 atexit.register(tally_results)
 
 if __name__ == "__main__":

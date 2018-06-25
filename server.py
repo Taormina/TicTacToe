@@ -31,21 +31,21 @@ def act():
 
 
 test_board = [
-	['X', '', ''],
 	['X', '', 'O'],
-	['O', 'X', '']
+	['X', '', 'O'],
+	['O', '', 'X']
 ]
 
 print_board(test_board)
-print lanes(test_board)
+print(lanes(test_board))
 
-print winner(test_board)
-print winner(empty_board())
-print winner([['X'] * 3] * 3)
-print winner([['O'] * 3] * 3)
+print(winner(test_board))
+print(winner(empty_board()))
+print(winner([['X'] * 3] * 3))
+print(winner([['O'] * 3] * 3))
 
-print whos_next(test_board)
-print whos_next(empty_board())
+print(whos_next(test_board))
+print(whos_next(empty_board()))
 
 
 if __name__ == "__main__":

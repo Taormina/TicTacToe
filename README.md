@@ -11,3 +11,6 @@
 
 ## The Random Agent
 `FLASK_APP=random_agent.py flask run`
+
+# Testing
+`pytest`
