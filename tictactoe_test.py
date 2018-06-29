@@ -57,3 +57,17 @@ def test_whos_next():
 		['', '', '']
 	]) == 'O'
 
+def test_still_going():
+	assert still_going(empty_board()) == True
+	assert still_going(test_board) == True
+	assert still_going([
+		['X', 'O', 'X'], 
+		['X', 'O', 'O'], 
+		['X', 'O', 'X']
+	]) == False
+	assert still_going([
+		['X', 'O', ''], 
+		['X', 'O', ''], 
+		['X', 'O', '']
+	]) == False
+

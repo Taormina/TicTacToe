@@ -41,4 +41,7 @@ def whos_next(board):
 	return 'X' if remaining_empty(board) % 2 else 'O'
 
 def empty_board():
-	return [[''] * 3] * 3
+	return [['','',''], ['','',''], ['','','']]
+
+def still_going(board):
+	return winner(board) == '' and remaining_empty(board) > 0

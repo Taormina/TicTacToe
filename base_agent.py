@@ -1,4 +1,5 @@
 from flask import Flask, request
+import requests
 app = Flask(__name__)
 
 wins = 0
@@ -19,6 +20,10 @@ def finish():
 		loses += 1
 	return "ok"
 
+if __name__ == "__main__":
+    app.run()
+
+
 import atexit
 def tally_results():
 	global wins
@@ -26,6 +31,3 @@ def tally_results():
 	global draws
 	print("I won {0} times, lost {1} times, and tied {2} for a career total score of {3}".format(wins, loses, draws, wins - loses))
 atexit.register(tally_results)
-
-if __name__ == "__main__":
-    app.run()
