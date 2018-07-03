@@ -78,3 +78,10 @@ def test_obvious():
 	assert len([x for x in flat_mapped if x == 'X']) == 5
 	assert len([o for o in flat_mapped if o == 'O']) == 4
 
+def test_game_equality():
+	game1 = Game('player1', 'player2')
+	game2 = Game('player2', 'player1')
+	game3 = Game('player1', 'player2')
+	assert game1 == game1
+	assert game1 != game2
+	assert game1 != game3
