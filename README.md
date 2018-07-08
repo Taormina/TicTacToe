@@ -101,6 +101,14 @@ mysql> source setup.sql;
 mysql> quit;
 ```
 
+## Docker
+It's also possible to develop locally using docker + docker compose:
+
+```sh
+## binds game server to `:80` (override with `GAME_PORT=<NUMBER>`)
+docker-compose up
+```
+
 # Testing
 `pytest`
 

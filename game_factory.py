@@ -6,7 +6,11 @@ import requests
 import json
 
 # if you'd like security, obviously change these
-connection = pymysql.connect(host='localhost', user='root', password='', db='tictactoe', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
+connection = pymysql.connect(
+    read_default_file='./db.local.cnf',
+    charset='utf8mb4',
+    cursorclass=pymysql.cursors.DictCursor
+)
 
 class Game():
 	def __init__(self, player1, player2, game_id=None):
