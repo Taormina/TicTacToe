@@ -5,7 +5,7 @@ I'm trying to make games! As some of you may be aware, I just started Taormina I
 
 ## AI Games, what are we talking here?
 
-For now, just Tic-Tac-Toe to serve as a proof of concept to start the conversation. But we could be talking about a lot more! For now, I really want to collect feedback [**on this Google Form**](https://goo.gl/forms/Y8AXjW7gjqYdbE1O2) about what sorts of games might be interesting to build for.
+For now, just Tic-Tac-Toe to serve as a proof of concept to start the conversation. But we could be talking about a lot more! For now, I really want to collect feedback [**on this Google Form**](https://docs.google.com/forms/d/1xBOwsc4R4Zwa6x28oq5fO23awVDptFOLhOeF_2yQQQU/edit?usp=sharing) about what sorts of games might be interesting to build for.
 
 Tic-Tac-Toe is interesting, so to win, you'll need to be able to build something that would never lose.
 
